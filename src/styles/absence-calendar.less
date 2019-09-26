@@ -1,0 +1,27 @@
+.calendar-container .calendar-container .absence-calendar .absence-container {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.absence-container .absence {
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+.absence-container {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+	.absence-container .absence {
+		font-size: 15px !important;
+	}
+}
+
+@media (min-width: 500px) {
+	.absence-container {
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,76 @@
+@import '../../node_modules/antd/lib/style/themes/default.less';
+
+@primary-color:  fade(#1890ff, 98%);
+@text-color: rgba(0, 0, 0, .65);
+@text-color-secondary: rgba(0, 0, 0, 0.45);
+@heading-color: rgba(0, 0, 0, 0.85);
+@secondary-color:  fade(#1890ff, 100%);
+@layout-header-background: fade(#ffffff, 100%);
+@btn-primary-bg: fade(#1890ff, 99%);
+@bg-color: fade(#000, 50%);
+@layout-body-background: #f0f2f5;
+@card-background: #f8f8f8;
+@icon-color: fade(#000, 65%);
+@anticon-down: fade(#000, 66%);
+@primary-text: @text-color;
+
+// .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+//     background-color: @btn-primary-bg !important;
+// }
+
+// .ant-menu.ant-menu-dark .ant-menu-item-selected {
+//     background-color: @primary-color !important;
+// }
+
+body {
+    background-color: @bg-color;
+}
+
+@media(max-width: 600px) {
+    .cal {
+        margin: 0px !important;
+    }
+}
+
+.ant-card-bordered {
+    background-color: @card-background !important;
+}
+
+.cal-container {
+    // padding: 24px;
+    padding-left: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    height: -webkit-fill-available;
+}
+
+.cal {
+    margin: 24px;
+    margin-left: 0;
+	padding: 8px;
+    background-color: @card-background;
+    min-height: -webkit-fill-available;
+    margin-bottom: 100px;
+    animation-duration: 0.3s !important;
+}
+
+
+.ant-menu-dark {
+    background-color: #001529 !important;
+}
+
+.ant-menu-light {
+    background-color: #ffffff !important;
+}
+
+.anticon-menu-fold, .anticon-menu-unfold, .anticon-bell, .user-label-container .name-container .name, .anticon-down {
+    color: @icon-color !important;
+}
+
+.primary-text {
+    color: @text-color;
+}
+
+.rc-color-picker-panel-params-input {
+    color: @text-color;
+}

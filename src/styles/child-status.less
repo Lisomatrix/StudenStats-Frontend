@@ -1,0 +1,35 @@
+@media(max-width: 600px) {
+    .child-status-container {
+        padding: 8px !important;
+        max-height: calc(100% - 60px);
+        overflow: auto;
+    }
+
+    .child-status {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+    }
+
+    .child-status-graph-container {
+        visibility: collapse;
+        width: 0 !important;
+        height: 0 !important;
+    }
+}
+
+.child-status-container {
+    padding-right: 24px;
+    padding-top: 24px;
+}
+
+.child-status {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 18px;
+    animation-duration: 0.3s;
+}
+
+.child-status-graph-container {
+    margin-top: 18px;
+    animation-duration: 0.3s;
+}

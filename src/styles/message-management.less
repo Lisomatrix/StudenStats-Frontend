@@ -1,0 +1,72 @@
+@media(max-width: 600px) {
+    .message-management-container {
+        padding: 8px !important;
+    }
+
+    .message-info-container {
+        font-size: 8px !important;
+    }
+
+    .subject-container {
+        display: flex !important;
+        flex-flow: column !important;
+    }
+
+    .subject-subcontainer {
+        width: 100% !important;
+        display: flex !important;
+        flex-flow: column !important;
+    }
+
+    .send-btn {
+        width: 100% !important;
+        height: 40px !important;
+        margin: 0 !important;
+        margin-top: 8px !important;
+    }
+}
+
+
+.message-management-container {
+    padding-right: 24px;
+    padding-top: 24px;
+    overflow: auto;
+    height: calc(100% - 20px);
+}
+
+.message-info-container {
+    animation-duration: 0.3s;
+}
+
+.message-management {
+    border-radius: 0.5em;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    // height: 100%;
+    padding: 8px;
+    margin-top: 18px;
+    animation-duration: 0.3s;
+}
+
+.message-management .subject-container {
+    display: flex;
+    flex-flow: row;
+}
+
+.message-management .subject-container .send-btn {
+    margin-left: 18px;
+    margin-top: 40px;
+}
+
+.message-management .subject-container .subject-subcontainer {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+}
+
+.message-management .message-container {
+    margin-top: 18px;
+    display: flex;
+    flex-flow: column;
+}

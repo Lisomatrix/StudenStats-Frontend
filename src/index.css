@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.ant-card {
+	border: none !important;
+	border-radius: 5px;
+}
+
+.ant-layout {
+	overflow: hidden;
+}
+
+.content {
+	overflow: auto;
+}
+
+.container-size {
+	max-height: calc(100vh - 64px);
+	/* overflow: hidden; */
+	height: 100vh;
+}
+
+.antd-pro-charts--water-wave-text {
+	padding: 8px;
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #aaa;
+	border-radius: 10em;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+} */

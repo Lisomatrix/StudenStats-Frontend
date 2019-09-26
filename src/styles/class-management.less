@@ -1,0 +1,398 @@
+@import './variables.less';
+
+.ant-card-bordered {
+    border-radius: 0.5em !important;
+}
+
+.ant-card-head-title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.antd-pro-charts--chart-card-meta {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 900px) {
+
+    .absence-list-container {
+        padding: 24px !important; 
+    }
+
+}
+
+@media(max-width: 1000px) {
+
+    .class-management-container {
+        overflow: auto !important;
+        padding-left: 24px !important
+    }
+
+    .class-management-container .graphs-container {
+        grid-template-columns: 1fr 1fr !important; 
+    }
+}
+
+@media(max-width: 600px) {
+
+    .absence-list-container {
+        padding: 24px !important; 
+    }
+
+    .absence-list-container .absence-list-table-container {
+        background-color: transparent !important;
+    }
+
+    .class-management-container {
+        grid-template-rows: auto 300px 300px 1fr !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
+        // padding-left: 5px !important;
+    }
+
+    .class-management-container .class-name-container {
+        padding-left: 5px;
+    }
+
+    .class-management-container .graphs-container {
+        grid-template-rows: auto auto auto !important;
+        grid-template-columns: 1fr !important;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .class-management-container .grades-graph-container {
+        visibility: collapse;
+        width: 0 !important;
+        height: 0 !important;
+        // margin: 8px;
+        // margin-top: 0;
+    }
+
+    .absence-list-container {
+        padding: 0 !important;
+        margin: 0;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto 1fr !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .absence-list-container .absence-list-filters-container {
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+        padding: 8px;
+        border-radius: 0.5em;
+    }
+
+    .absence-list-container .absence-list-filters-container .student-filter-container {
+        grid-column: 1 e("/") 1 !important;
+        grid-row: 2 e("/") 2 !important;
+    }
+
+    .absence-list-container .absence-list-filters-container .absences-type-filter-container {
+        grid-column: 2 e("/") 2 !important;
+        grid-row: 2 e("/") 2 !important;
+    }
+
+    .absence-list-container .absence-list-filters-container .absences-counter-container {
+        grid-column: 1 e("/") 3 !important;
+        grid-row: 3 e("/") 3 !important;
+        text-align: center;
+    }
+}
+
+canvas {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+@media(min-height: 1200px) {
+
+    .class-management-container {
+        overflow: auto !important;
+        padding-bottom: 12px !important;
+        grid-template-rows: auto auto minmax(300px, 340px) !important
+    }
+}
+
+
+.class-management-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    padding: 24px;
+    padding-left: 0;
+    animation-duration: 0.4s;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: 100%;
+    grid-row-gap: 10px;
+}
+
+.antd-pro-charts--mini-progress-progressWrap {
+    background-color: lightgray;
+}
+
+.class-name-container {
+    grid-row: 1 e("/") 1;
+    text-align: left;
+    font-size: 18px;
+}
+
+.class-management-container .graphs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 2 e("/") 2;
+    grid-gap: 10px;
+}
+
+.class-management-container .graphs-container .absence-container {
+    grid-column: 1 e("/") 1;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    padding: 8px;
+}
+
+.class-management-container .graphs-container .hours-container {
+    grid-column: 3 e("/") 3;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    padding: 8px;
+}
+
+.class-management-container .graphs-container .absence-container .title-container {
+    text-align: left;
+    font-size: 28px;
+}
+
+.class-management-container .graphs-container .modules-container {
+    grid-column: 2 e("/") 2;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    padding: 8px;
+}
+
+.class-management-container .graphs-container .modules-container .title-container {
+    text-align: left;
+    font-size: 28px;
+}
+
+.class-management-container .grades-graph-container {
+    grid-row: 3 e("/") 3;
+}
+
+.class-management-container .grades-graph-container svg {
+    width: 100% !important;
+}
+
+.class-management-container .grades-graph-container .card-content-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.class-management-container .grades-graph-container .card-content-container .grades-filter-options-container {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-row: 1 e("/") 1;
+    padding-left: 58px;
+}
+
+.class-management-container .grades-graph-container .card-content-container .grades-graph {
+    grid-row: 2 e("/") 2;
+}
+
+.absence-list-container {
+    display: grid;
+    grid-template-rows: 70px auto 1fr;
+    grid-template-columns: 1fr;
+    padding: 24px;
+    padding-left: 0;
+    padding-bottom: 0;
+    animation-duration: 0.3s;
+    overflow: auto;
+    max-height: calc(100vh - 70px);
+}
+
+.absence-list-container .absence-list-title-container {
+    grid-row: 1 e("/") 1;
+    text-align: left;
+}
+
+.absence-list-container .absence-list-title-container .absence-list-title {
+    font-size: 36px;
+}
+
+.absence-list-container .absence-list-filters-container {
+    grid-row: 2 e("/") 2;
+    display: grid;
+    grid-template-columns: minmax(20px, 120px) minmax(20px, 120px) minmax(20px, 120px) minmax(20px, 120px) 1fr minmax(80px, 200px);
+    grid-template-rows: 1fr;
+    grid-gap: 8px;
+    background-color: @card-background;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.absence-list-container .absence-list-filters-container .discipline-filter-container {
+    grid-column: 1 e("/") 1;
+}
+
+.absence-list-container .absence-list-filters-container .module-filter-container {
+    grid-column: 2 e("/") 2;
+}
+
+.absence-list-container .absence-list-filters-container .student-filter-container {
+    grid-column: 3 e("/") 3;
+    width: 100%;
+}
+
+.absence-list-container .absence-list-filters-container .absences-type-filter-container {
+    grid-column: 4 e("/") 4;
+}
+
+.absence-list-container .absence-list-filters-container .absences-counter-container {
+    grid-column: 6 e("/") 6;
+    min-width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 4px;
+    text-indent: 8px;
+}
+
+.absence-list-container .absence-list-table-container {
+    grid-row: 3 e("/") 3;
+    padding-top: 8px;
+    background-color: @card-background;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.student-row-container:hover {
+    background-color: #e6f7ff;
+}
+
+.student-row-container {
+    padding-top: 6px;
+    height: 44px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    background-color: #fff;
+    border-radius: 0.3em;
+    margin-bottom: 5px;
+}
+
+.student-row-container .student-icon {
+    margin-left: 8px;
+}
+
+.student-row-container .student-name {
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 12px;
+}
+
+.graph-container {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    text-align: center;
+}
+
+.graph-container .graph {
+}
+
+.graph-container .stats-container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.graph-container .stats-container .title {
+    font-weight: bold;
+}
+
+.graph-container .stats-container .value {
+    text-align: center;
+    font-weight: bold;
+}
+
+.student-card {
+    background-color: white;
+    padding-top: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 0.5em;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 8px;
+}
+
+.student-card .card-identity-container {
+    display: flex;
+}
+
+.student-card .photo-identity-container {
+    width: auto;
+}
+
+.student-card .name-identity-container {
+    padding-top: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+.student-card .absences-list-container {
+    padding-top: 5px;
+}
+
+.absence-row-container {
+    display: flex;
+    flex-flow: column;
+    margin-top: 8px;
+}
+
+.date-container {
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.disciplines-container {
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(20px, 1fr) minmax(0px, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.table-headers-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 110px) minmax(0px, 1fr);
+    grid-template-rows: 1fr;
+    margin: 5px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.ant-divider-horizontal {
+    margin: 10px 0 !important;
+    margin-top: 10px !important;
+}
+
+.absences-container {
+    
+}

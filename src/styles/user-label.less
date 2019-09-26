@@ -1,0 +1,64 @@
+@import './variables.less';
+
+@media (max-width: 500px) {
+	.user-label-container .icon-container {
+		padding-right: 0px !important;
+	}
+
+	.user-label-container .down-icon-container {
+		display: none;
+	}
+
+	.user-label-container .name-container {
+		display: none;
+	}
+
+	.user-label-container {
+		padding-left: 20px !important;
+	}
+}
+
+.user-label-container {
+	display: flex;
+	flex-flow: row;
+	cursor: pointer;
+	margin-right: 20px;
+	padding: 0 12px;
+	max-height: 64px;
+	min-width: 64px;
+}
+
+.user-label-container:hover {
+	background: #e6f7ff;
+	color: @secondary-color;
+}
+
+.user-label-container .icon-container {
+	padding-right: 8px;
+}
+
+.user-label-container .icon-container .icon {
+	// background-image: url(https://cdn.discordapp.com/avatars/313010829790412800/57e7c5d16250f158d483b4c1869844b7.png?size=128);
+}
+
+.user-label-container .down-icon-container {
+	padding-left: 4px;
+	padding-top: 3px;
+}
+
+.user-label-container:hover .down-icon-container .anticon {
+	color: @secondary-color !important;
+}
+
+.user-label-container:hover .ant-dropdown-trigger .down-icon-container .anticon-down {
+	color: @secondary-color;
+}
+
+.user-label-container .name-container {
+	cursor: pointer;
+	padding-top: 2px;
+}
+
+.user-label-container .name-container .name {
+	cursor: pointer;
+}

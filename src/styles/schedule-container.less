@@ -1,0 +1,86 @@
+.input-reset {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.schedule-container {
+    border-radius: 0.5em;
+    margin-top: 18px;
+}
+
+.schedule-container .schedule {
+    margin: 8px;
+    // padding: 8px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    border: 1px solid black;
+    border-right: 0;
+    grid-auto-flow: column;
+}
+
+.schedule-column {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.schedule-row {
+    // padding: 8px;
+    border: 1px solid black;
+    height: 40px;
+    max-height: 40px;
+    text-align: center;
+    display: flex;
+}
+
+.schedule-row .schedule-row-discipline-container {
+    padding: 8px;
+    width: 75%;
+}
+
+.schedule-row .schedule-row-classroom-container {
+    padding: 8px;
+    width: 25%;
+    // height: 100%;
+    border-left: 1px solid black;
+}
+
+.column-header {
+    background-color: #f5222d;
+    height: 28px;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    
+}
+
+.column-header .classroom-divisor {
+    width: 25%;
+    border-left: 1px solid black;
+}
+
+.column-header .column-text-container {
+    width: 75%;
+}
+
+.column-header .column-text-container .text {
+    color: white;
+}
+
+.hours-column {
+    background-color: white;
+}
+
+.hours-header {
+    background: white;
+}
+
+.schedule-row-classroom-container-editMode {
+    padding: 0 !important;
+}

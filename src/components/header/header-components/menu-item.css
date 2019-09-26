@@ -1,0 +1,13 @@
+.menu-item {
+	display: flex;
+	flex-flow: row;
+}
+
+.menu-item-icon-container {
+	float: left;
+	padding-top: 2px;
+}
+
+.menu-item-title-container {
+	padding-left: 10px;
+}

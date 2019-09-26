@@ -1,0 +1,71 @@
+@import './variables.less';
+
+@media(max-width: 900px) {
+	.mark-test-container {
+		padding: 24px !important;
+		margin: 8px !important;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.mark-test-container {
+		margin: 0 !important;
+		padding: 8px !important;
+		overflow: auto;
+		// padding-left: 5px !important;
+		// padding-right: 5px !important;
+		// padding-top: 15px !important;
+	}
+
+	.classes-container {
+		grid-template-columns: 1fr !important;
+		grid-template-rows: 1fr 1fr 1fr !important;
+	}
+}
+
+.mark-test-container {
+	width: 100%;
+	height: 100%;
+	padding: 24px;
+	padding-left: 0;
+	animation-duration: 0.3s;
+	overflow: auto;
+}
+
+.mark-test-container .classes-container {
+	height: auto;
+	display: grid;
+	grid-template-columns: 120px 120px 120px;
+	grid-gap: 8px;
+	padding: 10px;
+	// height: 20px;
+	border-radius: 0.5em 0.5em 0 0;
+	// margin-right: 24px;
+	//background-color: @bg-color;
+	background-color: @card-background;
+}
+
+.marked-test-container {
+	display: flex;
+	flex-flow: row;
+}
+
+.marked-test-container .discipline {
+	display: inline;
+	padding-top: 4px;
+}
+
+.marked-test-container .remove-btn {
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+}
+
+.mark-test-calendar-container {
+	//background-color: @bg-color;
+	background-color: @card-background;
+	// margin-right: 24px;
+	border-radius: 0 0 0.5em 0.5em;
+}

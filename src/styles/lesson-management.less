@@ -1,0 +1,143 @@
+@import './variables.less';
+
+.reset-btn {
+	background: none;
+	border: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	-webkit-appearance: button;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.ant-table-thead > tr, .ant-table-tbody > tr {
+	animation-duration: 0.3s;
+}
+
+.lesson-management-container {
+	margin: 24px;
+  	margin-left: 0;
+	background-color: @card-background;
+	padding: 5px;
+	animation-duration: 0.3s;
+	border-radius: 0.5em;
+}
+
+@media(max-width: 900px) {
+	.lesson-management-container {
+		// margin: 24px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.summary-btn {
+		grid-column: 1 e("/") 3 !important;
+	}
+
+	.lesson-management-container {
+		margin: 8px;
+		border-radius: 0.5em;
+		// margin-top: 15px;
+		// margin-left: 5px;
+		// margin-right: 5px;
+	}
+
+	.lesson-pickers-container {
+		padding: 8px !important;
+		display: grid;
+		grid-template-rows: auto auto !important;
+		grid-template-columns: 1fr 1fr !important;
+		grid-gap: 8px;
+	}
+
+	.lesson-pickers-container .lesson-date {
+		grid-column: 1 e("/") 3 !important;
+		grid-row: 4 e("/") 4 !important;
+		text-align: center !important;
+		text-indent: 0 !important;
+	}
+
+	.lesson-pickers-container .add-lesson-btn {
+		grid-column: 2 e("/") 2 !important;
+		grid-row: 2 e("/") 2;
+		width: auto !important;
+	}
+
+	.lesson-pickers-container .class-select {
+		grid-column: 1 e("/") 1 !important;
+		grid-row: 1 e("/") 1;
+		width: auto !important;
+	}
+
+	.lesson-pickers-container .lesson-select {
+		grid-column: 1 e("/") 1 !important;
+		grid-row: 2 e("/") 2;
+		width: auto !important;
+	}
+
+	.lesson-pickers-container .discipline-select {
+		grid-column: 2 e("/") 2 !important;
+		grid-row: 1 e("/") 1;
+		width: auto !important;
+	}
+}
+
+.lesson-pickers-container {
+	padding: 5px;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto auto auto 1fr auto;
+	grid-gap: 8px;
+}
+
+.lesson-pickers-container .add-lesson-btn {
+	grid-column: 5 e("/") 5;
+}
+
+.lesson-pickers-container .summary-btn {
+	grid-column: 6 e("/") 6;
+}
+
+.lesson-pickers-container .class-select {
+	grid-column: 1 e("/") 1;
+}
+
+.lesson-pickers-container .lesson-select {
+	grid-column: 3 e("/") 3;
+}
+
+.lesson-pickers-container .discipline-select {
+	grid-column: 2 e("/") 2;
+}
+
+.lesson-pickers-container .lesson-date {
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 4px;
+	text-indent: 8px;
+	grid-column: 4 e("/") 4;
+}
+
+.reset-btn::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.reset-btn:focus {
+	outline: none;
+}
+
+.ant-table-pagination.ant-pagination {
+	margin: 16px 0;
+	float: right;
+	margin-right: 8px;
+}
+
+h3.summary-title {
+	font-size: 20px;
+	text-indent: 8px;
+}

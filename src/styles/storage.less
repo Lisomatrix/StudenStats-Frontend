@@ -1,0 +1,257 @@
+@import './variables.less';
+
+@media(max-width: 900px) {
+    .storage-container {
+        margin: 0px !important;
+    }
+    .storage-container {
+        margin: 24px !important;
+    }
+
+    .multi-file-options-container {
+        margin: 8px;
+    }
+
+    .storage-capacity-container {
+        margin: 8px;
+    }
+
+    .storage-files-container {
+        margin: 8px !important;
+        width: auto;
+    }
+
+    .storage-capacity-container {
+        width: auto !important;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .storage-container {
+        margin: 0px !important;
+        border-radius: 0.5em;
+        padding: 0 !important;
+    }
+
+    .multi-file-options-container {
+        // margin: 0px !important;
+        border-radius: 0.5em;
+        // padding: 0 !important;
+    }
+}
+
+.storage-container {
+    margin: 24px;
+    margin-left: 0;
+    display: flex;
+    flex-flow: column;
+    animation-duration: 0.5s;
+    border-radius: 0.5em;
+    animation-duration: 0.3s;
+}
+
+
+.storage-capacity-container {
+
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.storage-files-container {
+    height: calc(100% - 80px);
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin: 24px;
+    margin-left: 0;
+    animation-duration: 0.5s;
+    border-radius: 0.5em;
+    animation-duration: 0.3s;
+}
+
+.file-card-container {
+    display: flex;
+    flex-flow: column;
+    transition: all 1.5s;
+}
+
+.file-card-name-container {
+    height: 40px;
+    display: flex;
+    flex-flow: row;
+}
+
+.file-card-options-container {
+    display: flex;
+    flex-flow: row;
+    top: 60%;
+    left: 20%;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.mobile-options {
+    position: inline;
+    max-height: 888px;
+    overflow: visible;
+}
+
+.mobile-card {
+    min-height: 100px !important;
+}
+
+.card-option-container {
+    width: 33%;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card {
+    transition: all 0.8s;
+    min-height: 80px;
+}
+
+.card:hover {
+    min-height: 100px;
+}
+
+.multi-file-options-container {
+    width: 300px;
+    margin-top: 40px;
+    height: 60px;
+    border-radius: 0.5em;
+    background-color: #fff;
+    padding-top: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    animation-duration: 0.3s;
+}
+
+.multi-file-options-visible {
+    margin-top: 0px !important;
+}
+
+.options-container {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+.options-container .ant-checkbox-inner {
+    width: 25px;
+    height: 25px;
+}
+
+.options-container .ant-checkbox-inner:after {
+    -webkit-transform: rotate(45deg) scale(0) translate(-50%, -50%);
+    -ms-transform: rotate(45deg) scale(0) translate(-50%, -50%);
+    transform: rotate(45deg) scale(0) translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    display: table;
+    width: 8.71428571px;
+    height: 16.14285714px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: ' ';
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+    -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+    opacity: 0;
+}
+
+.drag-container {
+    padding-top: 18px;
+    display: inline-block;
+    height: 140%;
+    width: 100%;
+    padding-right: 24px;
+}
+
+.ant-upload-drag {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    margin: 24px;
+    margin-left: 0;
+    border-radius: 0.5em !important;
+    background-color: #fff !important;
+}
+
+.context-menu-item {
+    width: 200px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.ant-dropdown-menu {
+    border-radius: 0.5em !important;
+}
+
+.ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover, .context-menu-item {
+    width: 100% !important;
+}
+
+.file-card-display-container {
+    display: flex;   
+    flex-flow: row;
+}
+
+.file-card-display-container .file-img-container {
+    width: 35%;
+    font-size: 40px;
+}
+
+.file-card-display-container .info-container {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: column;
+    // text-indent: 16px;
+    padding-left: 5px;  
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-card-display-container .info-container .name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+// .file-card-display-container .info-container .name {
+
+// }
+
+
+// .file-card-display-container .info-container .size {
+    
+// }
+
+.file-upload-card {
+    display: flex;
+    flex-flow: column;
+    // height: 60px;
+    border-radius: 0.5em;
+    background-color: #fff;
+    padding: 18px;
+    margin-right: 24px;
+    margin-top: 18px;
+}
+
+.file-upload-card .file-upload-card-title-container {
+
+}
+
+.file-upload-card .file-upload-progress-container {
+
+}

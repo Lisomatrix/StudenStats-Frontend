@@ -1,0 +1,229 @@
+@import './../variables.less';
+
+.full-size {
+	width: 100vw;
+	height: 100vh;
+}
+
+// .ant-layout-sider {
+// 	background-color: rgb(0, 21, 41) !important;
+// }
+
+@media (max-width: 500px) {
+	.sider-shadow {
+		width: 95vw !important;
+		height: 100%;
+	}
+
+	.header {
+		border: none !important;
+	}
+}
+
+@media (max-width: 900px) {
+	.content {
+		margin: 0 !important;
+		padding: 0 !important;
+		margin-top: 64px !important;
+		overflow: auto !important;
+		overflow-x: hidden !important;
+		min-height: -webkit-fill-available !important;
+	}
+}
+
+.sider-shadow {
+	// -webkit-box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+	// box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+	// border-right: 1px solid #e8e8e8;
+	// background-color: rgb(0, 21, 41) !important;
+	box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.menu-left-align {
+	text-align: left;
+	padding-top: 20px;
+}
+
+.logo-container {
+	width: 100%;
+	height: 64px;
+	display: flex;
+	flex-flow: row;
+	overflow: hidden;
+	margin-bottom: 1px;
+	box-shadow: 1px 1px 0 0 #e8e8e8;
+}
+
+.logo-container .logo-icon-container {
+	padding-left: 21px;
+	padding-top: 15px;
+}
+
+.logo-container .logo-icon-container .logo-icon {
+	font-size: 28px;
+}
+
+.logo-container .logo-title-container {
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.logo-container .logo-title-container .logo-title {
+	font-weight: bold;
+}
+
+.logo-container .logo-title-container .light {
+	color: rgba(0, 0, 0, 0.65);
+}
+
+.logo-container .logo-title-container .dark {
+	color: #ffffff;
+}
+
+.logo-container .logo-title-container .hidden {
+	display: none;
+}
+
+.logo-container .logo-icon-container .light {
+	fill: rgba(0, 0, 0, 0.65) !important;
+}
+
+.logo-container .logo-icon-container .dark {
+	fill: #ffffff !important;
+}
+
+span.logo-title.light.hidden {
+	display: none;
+}
+
+.logo-container .logo-title-container .logo-title .hidden {
+	display: none;
+}
+
+.header {
+	background-color: #ffffff;
+	padding: 0;
+	// padding-left: 15px;
+	box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+	overflow: hidden;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	position: fixed !important;
+  transition: all 0.2s !important;
+  top: 0px;
+	right: 0px;
+	border-left: 1px solid rgb(232, 232, 232);
+  z-index: 900;
+}
+
+.header .trigger {
+	float: left;
+	font-size: 18px;
+	line-height: 64px;
+	padding: 0 24px;
+	cursor: pointer;
+	transition: color .3s;
+	padding-top: 25px;
+	font-size: 20px;
+}
+
+.header .trigger:hover {
+	color: @secondary-color !important;
+	background: #e6f7ff;
+}
+
+.header .user-options-container {
+	float: right;
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+}
+
+.header .notification-container {
+	font-size: 20px;
+	cursor: pointer;
+	width: 64px;
+	padding-left: 22px;
+}
+
+.header .notification-container:hover {
+	background: #e6f7ff;
+	color: @secondary-color;
+}
+
+.header .notification-container:hover i.anticon.anticon-bell, .user-label-container:hover .name-container .name {
+    color: @secondary-color !important;
+}
+
+// .user-label-container:hover .down-icon-container .name {
+// 	color: @secondary-color !important;
+// }
+
+.notification-content-container {
+	display: flex;
+	flex-flow: column;
+}
+
+.notification-item-container {
+	padding-top: 12px;
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	flex-flow: column;
+	padding: 0px;
+	padding-left: 24px;
+	min-height: min-content;
+	transition: all 0.2s ease 0s;
+	height: 100%;
+	background-color: @bg-color;
+	overflow: hidden;
+}
+
+.ant-layout, body {
+	background-color: @bg-color;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+	// background: #1dc6dd;
+	background: @primary-color;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.ant-dropdown-menu-item {
+	min-width: 200px !important;
+}
+
+.antd-pro-charts-mini-progress-progressWrap {
+	background-color: gainsboro !important;
+}
+
+.ant-card-bordered, .lesson-management-container, .grade-management, .schedule-creator-container, .settings-container {
+	border: 1px solid #e8e8e8 !important;
+	box-shadow: 4px 4px 40px rgba(0,0,0,.05);
+}
+
+//.absence-list-table-container, .absence-list-filters-container .absence-list-container,
