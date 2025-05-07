@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ant-design-pro": "^2.2.1",
+    "ant-design-pro": "^2.3.2",
     "antd": "^3.13.2",
     "antd-theme-webpack-plugin": "^1.2.0",
     "babel-plugin-import": "^1.11.0",
@@ -24,7 +24,7 @@
     "react-redux": "^5.1.1",
     "react-resize-detector": "^3.4.0",
     "react-resize-sensor": "^1.0.1",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^7.5.2",
     "react-scripts": "1.1.4",
     "react-transition-group": "^2.5.3",
     "redux": "^4.0.1",
